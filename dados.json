@@ -1,0 +1,1714 @@
+[
+  {
+    "cnae": "0000-0/00",
+    "desc_cnae": "Locação de bens móveis (Pura) / Atividades sem CNAE específico",
+    "item": "00.00",
+    "categoria": "Não Incidência",
+    "desc_servico": "Locação de bens móveis ou Atividades de Comércio/Indústria (Não incidência de ISS).",
+    "local_iss": "Não Incide",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6201-5/01",
+    "desc_cnae": "Desenvolvimento de programas de computador sob encomenda",
+    "item": "01.01",
+    "categoria": "Informática",
+    "desc_servico": "Análise e desenvolvimento de sistemas.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6201-5/01",
+    "desc_cnae": "Desenvolvimento de programas de computador sob encomenda",
+    "item": "01.02",
+    "categoria": "Informática",
+    "desc_servico": "Programação.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6202-3/00",
+    "desc_cnae": "Desenvolvimento e licenciamento de programas de computador customizáveis",
+    "item": "01.02",
+    "categoria": "Informática",
+    "desc_servico": "Programação.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6311-9/00",
+    "desc_cnae": "Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet",
+    "item": "01.03",
+    "categoria": "Informática",
+    "desc_servico": "Processamento, armazenamento ou hospedagem de dados.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6202-3/00",
+    "desc_cnae": "Desenvolvimento e licenciamento de programas de computador customizáveis",
+    "item": "01.04",
+    "categoria": "Informática",
+    "desc_servico": "Elaboração de programas de computadores, inclusive de jogos eletrônicos.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6203-1/00",
+    "desc_cnae": "Desenvolvimento e licenciamento de programas de computador não-customizáveis",
+    "item": "01.05",
+    "categoria": "Informática",
+    "desc_servico": "Licenciamento ou cessão de direito de uso de programas de computação.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6204-0/00",
+    "desc_cnae": "Consultoria em tecnologia da informação",
+    "item": "01.06",
+    "categoria": "Informática",
+    "desc_servico": "Assessoria e consultoria em informática.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6209-1/00",
+    "desc_cnae": "Suporte técnico, manutenção e outros serviços em tecnologia da informação",
+    "item": "01.07",
+    "categoria": "Informática",
+    "desc_servico": "Suporte técnico em informática, inclusive instalação, configuração e manutenção.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6201-5/02",
+    "desc_cnae": "Web Design",
+    "item": "01.08",
+    "categoria": "Informática",
+    "desc_servico": "Planejamento, confecção, manutenção e atualização de páginas eletrônicas.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "6319-4/00",
+    "desc_cnae": "Portais, provedores de conteúdo e outros serviços de informação na internet",
+    "item": "01.09",
+    "categoria": "Informática",
+    "desc_servico": "Disponibilização de conteúdos via internet.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "7210-0/00",
+    "desc_cnae": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais",
+    "item": "02.01",
+    "categoria": "Pesquisa",
+    "desc_servico": "Serviços de pesquisas e desenvolvimento de qualquer natureza.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "7740-3/00",
+    "desc_cnae": "Gestão de ativos intangíveis não-financeiros",
+    "item": "03.02",
+    "categoria": "Locação",
+    "desc_servico": "Cessão de direito de uso de marcas e de sinais de propaganda.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8230-0/02",
+    "desc_cnae": "Casas de festas e eventos",
+    "item": "03.03",
+    "categoria": "Locação",
+    "desc_servico": "Exploração de salões de festas e eventos.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "4911-6/00",
+    "desc_cnae": "Transporte ferroviário de carga",
+    "item": "03.04",
+    "categoria": "Locação",
+    "desc_servico": "Locação, sublocação, arrendamento, direito de passagem ou permissão de uso de ferrovia, rodovia, postes, cabos, dutos e condutos.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "4399-1/02",
+    "desc_cnae": "Montagem e desmontagem de andaimes e outras estruturas temporárias",
+    "item": "03.05",
+    "categoria": "Locação",
+    "desc_servico": "Cessão de andaimes, palcos, coberturas e outras estruturas de uso temporário.",
+    "local_iss": "Local da Prestação",
+    "retencao": "Sim"
+  },
+  {
+    "cnae": "8630-5/03",
+    "desc_cnae": "Atividade médica ambulatorial restrita a consultas",
+    "item": "04.01",
+    "categoria": "Saúde",
+    "desc_servico": "Medicina e biomedicina.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8640-2/02",
+    "desc_cnae": "Laboratórios clínicos",
+    "item": "04.02",
+    "categoria": "Saúde",
+    "desc_servico": "Análises clínicas, patologia, eletricidade médica, radioterapia, quimioterapia, ultra-sonografia, ressonância magnética, radiologia, tomografia e congêneres.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8610-1/01",
+    "desc_cnae": "Atividades de atendimento hospitalar",
+    "item": "04.03",
+    "categoria": "Saúde",
+    "desc_servico": "Hospitais, clínicas, laboratórios, sanatórios, manicômios, casas de saúde, prontos-socorros, ambulatórios e congêneres.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "---",
+    "desc_cnae": "Sem vinculação direta de CNAE (Verificar contrato)",
+    "item": "04.04",
+    "categoria": "Saúde",
+    "desc_servico": "Instrumentação cirúrgica.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8690-9/03",
+    "desc_cnae": "Atividades de acupuntura",
+    "item": "04.05",
+    "categoria": "Saúde",
+    "desc_servico": "Acupuntura.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8650-0/01",
+    "desc_cnae": "Atividades de enfermagem",
+    "item": "04.06",
+    "categoria": "Saúde",
+    "desc_servico": "Enfermagem, inclusive serviços auxiliares.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8650-0/99",
+    "desc_cnae": "Atividades de profissionais da área de saúde não especificadas anteriormente",
+    "item": "04.07",
+    "categoria": "Saúde",
+    "desc_servico": "Serviços farmacêuticos.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8650-0/04",
+    "desc_cnae": "Atividades de fisioterapia",
+    "item": "04.08",
+    "categoria": "Saúde",
+    "desc_servico": "Terapia ocupacional, fisioterapia e fonoaudiologia.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8690-9/99",
+    "desc_cnae": "Outras atividades de atenção à saúde humana não especificadas anteriormente",
+    "item": "04.09",
+    "categoria": "Saúde",
+    "desc_servico": "Terapias de qualquer espécie destinadas ao tratamento físico, orgânico e mental.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "8650-0/02",
+    "desc_cnae": "Atividades de profissionais da nutrição",
+    "item": "04.10",
+    "categoria": "Saúde",
+    "desc_servico": "Nutrição.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8630-5/01",
+    "desc_cnae": "Atividade médica ambulatorial com recursos para realização de procedimentos cirúrgicos",
+    "item": "04.11",
+    "categoria": "Saúde",
+    "desc_servico": "Obstetrícia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8630-5/04",
+    "desc_cnae": "Atividade odontológica",
+    "item": "04.12",
+    "categoria": "Saúde",
+    "desc_servico": "Odontologia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8650-0/99",
+    "desc_cnae": "Atividades de profissionais da área de saúde (Ortóptica)",
+    "item": "04.13",
+    "categoria": "Saúde",
+    "desc_servico": "Ortóptica.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "3250-7/06",
+    "desc_cnae": "Serviços de prótese dentária",
+    "item": "04.14",
+    "categoria": "Saúde",
+    "desc_servico": "Próteses sob encomenda.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8650-0/03",
+    "desc_cnae": "Atividades de psicologia e psicanálise",
+    "item": "04.15",
+    "categoria": "Saúde",
+    "desc_servico": "Psicanálise.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8650-0/03",
+    "desc_cnae": "Atividades de psicologia e psicanálise",
+    "item": "04.16",
+    "categoria": "Saúde",
+    "desc_servico": "Psicologia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8711-5/01",
+    "desc_cnae": "Clínicas e residências geriátricas",
+    "item": "04.17",
+    "categoria": "Saúde",
+    "desc_servico": "Casas de repouso e de recuperação, creches, asilos e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8630-5/07",
+    "desc_cnae": "Atividades de reprodução humana assistida",
+    "item": "04.18",
+    "categoria": "Saúde",
+    "desc_servico": "Inseminação artificial, fertilização in vitro e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8640-2/12",
+    "desc_cnae": "Serviços de bancos de células e tecidos humanos",
+    "item": "04.19",
+    "categoria": "Saúde",
+    "desc_servico": "Bancos de sangue, leite, pele, olhos, óvulos, sêmen e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8640-2/12",
+    "desc_cnae": "Serviços de bancos de células e tecidos humanos (Coleta)",
+    "item": "04.20",
+    "categoria": "Saúde",
+    "desc_servico": "Coleta de sangue, leite, tecidos, sêmen e outros materiais biológicos.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8622-4/00",
+    "desc_cnae": "Serviços de remoção de pacientes, exceto os serviços móveis de atendimento a urgências",
+    "item": "04.21",
+    "categoria": "Saúde",
+    "desc_servico": "Unidade de atendimento, assistência ou tratamento móvel e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6550-2/00",
+    "desc_cnae": "Planos de saúde",
+    "item": "04.22",
+    "categoria": "Saúde",
+    "desc_servico": "Planos de medicina de grupo ou individual e convênios para prestação de assistência médica.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6550-2/00",
+    "desc_cnae": "Planos de saúde",
+    "item": "04.23",
+    "categoria": "Saúde",
+    "desc_servico": "Outros planos de saúde que se cumpram através de serviços de terceiros.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7500-1/00",
+    "desc_cnae": "Atividades veterinárias",
+    "item": "05.01",
+    "categoria": "Veterinária",
+    "desc_servico": "Medicina veterinária e zootecnia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7500-1/00",
+    "desc_cnae": "Atividades veterinárias",
+    "item": "05.02",
+    "categoria": "Veterinária",
+    "desc_servico": "Hospitais, clínicas, ambulatórios, prontos-socorros e congêneres, na área veterinária.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7500-1/00",
+    "desc_cnae": "Atividades veterinárias",
+    "item": "05.03",
+    "categoria": "Veterinária",
+    "desc_servico": "Laboratórios de análise na área veterinária.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "0162-8/03",
+    "desc_cnae": "Serviço de manejo de animais",
+    "item": "05.04",
+    "categoria": "Veterinária",
+    "desc_servico": "Inseminação artificial, fertilização in vitro e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7500-1/00",
+    "desc_cnae": "Atividades veterinárias",
+    "item": "05.05",
+    "categoria": "Veterinária",
+    "desc_servico": "Bancos de sangue e de órgãos e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7500-1/00",
+    "desc_cnae": "Atividades veterinárias",
+    "item": "05.06",
+    "categoria": "Veterinária",
+    "desc_servico": "Coleta de sangue, leite, tecidos, sêmen e outros materiais biológicos.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7500-1/00",
+    "desc_cnae": "Atividades veterinárias",
+    "item": "05.07",
+    "categoria": "Veterinária",
+    "desc_servico": "Unidade de atendimento, assistência ou tratamento móvel e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9609-2/08",
+    "desc_cnae": "Higiene e embelezamento de animais domésticos",
+    "item": "05.08",
+    "categoria": "Veterinária",
+    "desc_servico": "Guarda, tratamento, amestramento, embelezamento, alojamento e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6511-1/02",
+    "desc_cnae": "Seguros de vida (Animais)",
+    "item": "05.09",
+    "categoria": "Veterinária",
+    "desc_servico": "Planos de atendimento e assistência médico-veterinária.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9602-5/01",
+    "desc_cnae": "Cabeleireiros, manicure e pedicure",
+    "item": "06.01",
+    "categoria": "Estética",
+    "desc_servico": "Barbearia, cabeleireiros, manicuros, pedicuros e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9602-5/02",
+    "desc_cnae": "Atividades de estética e outros serviços de cuidados com a beleza",
+    "item": "06.02",
+    "categoria": "Estética",
+    "desc_servico": "Esteticistas, tratamento de pele, depilação e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9609-2/05",
+    "desc_cnae": "Atividades de sauna e banhos",
+    "item": "06.03",
+    "categoria": "Estética",
+    "desc_servico": "Banhos, duchas, sauna, massagens e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9313-1/00",
+    "desc_cnae": "Atividades de condicionamento físico",
+    "item": "06.04",
+    "categoria": "Estética",
+    "desc_servico": "Ginástica, dança, esportes, natação, artes marciais e demais atividades físicas.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9602-5/02",
+    "desc_cnae": "Atividades de estética (Centros de emagrecimento)",
+    "item": "06.05",
+    "categoria": "Estética",
+    "desc_servico": "Centros de emagrecimento, spa e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9609-2/06",
+    "desc_cnae": "Serviços de tatuagem e colocação de piercing",
+    "item": "06.06",
+    "categoria": "Estética",
+    "desc_servico": "Aplicação de tatuagens, piercings e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7112-0/00",
+    "desc_cnae": "Serviços de engenharia",
+    "item": "07.01",
+    "categoria": "Engenharia",
+    "desc_servico": "Engenharia, agronomia, agrimensura, arquitetura, geologia, urbanismo, paisagismo e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4120-4/00",
+    "desc_cnae": "Construção de edifícios",
+    "item": "07.02",
+    "categoria": "Engenharia",
+    "desc_servico": "Execução, por administração, empreitada ou subempreitada, de obras de construção civil, hidráulica ou elétrica.",
+    "local_iss": "Local da Prestação",
+    "retencao": "Sim"
+  },
+  {
+    "cnae": "4321-5/00",
+    "desc_cnae": "Instalação e manutenção elétrica",
+    "item": "07.02",
+    "categoria": "Engenharia",
+    "desc_servico": "Execução de obras de construção civil (instalações elétricas).",
+    "local_iss": "Local da Prestação",
+    "retencao": "Sim"
+  },
+  {
+    "cnae": "4322-3/01",
+    "desc_cnae": "Instalações hidráulicas, sanitárias e de gás",
+    "item": "07.02",
+    "categoria": "Engenharia",
+    "desc_servico": "Execução de obras de construção civil (instalações hidráulicas).",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "4330-4/04",
+    "desc_cnae": "Serviços de pintura de edifícios em geral",
+    "item": "07.02",
+    "categoria": "Engenharia",
+    "desc_servico": "Execução de obras de construção civil (Pintura).",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "4399-1/03",
+    "desc_cnae": "Obras de alvenaria",
+    "item": "07.02",
+    "categoria": "Engenharia",
+    "desc_servico": "Execução de obras de construção civil (Alvenaria).",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "4399-1/99",
+    "desc_cnae": "Serviços especializados para construção não especificados anteriormente",
+    "item": "07.02",
+    "categoria": "Engenharia",
+    "desc_servico": "Execução de obras de construção civil.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "7111-1/00",
+    "desc_cnae": "Serviços de arquitetura",
+    "item": "07.03",
+    "categoria": "Engenharia",
+    "desc_servico": "Elaboração de planos diretores, estudos de viabilidade, estudos organizacionais e outros, relacionados com obras e serviços de engenharia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4311-8/01",
+    "desc_cnae": "Demolição de edifícios e outras estruturas",
+    "item": "07.04",
+    "categoria": "Engenharia",
+    "desc_servico": "Demolição.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "4399-1/99",
+    "desc_cnae": "Serviços especializados para construção não especificados anteriormente",
+    "item": "07.05",
+    "categoria": "Engenharia", "desc_servico": "Reparação, conservação e reforma de edifícios, estradas, pontes, portos e congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "4330-4/02",
+    "desc_cnae": "Instalação de portas, janelas, tetos, divisórias e armários embutidos de qualquer material",
+    "item": "07.06",
+    "categoria": "Engenharia",
+    "desc_servico": "Colocação e instalação de tapetes, carpetes, assoalhos, cortinas, revestimentos de parede, vidros, divisórias.",
+    "local_iss": "Prestador",
+    "retencao": "Não"
+  },
+  {
+    "cnae": "4330-4/05",
+    "desc_cnae": "Aplicação de revestimentos e de resinas em interiores e exteriores",
+    "item": "07.07",
+    "categoria": "Engenharia",
+    "desc_servico": "Recuperação, raspagem, polimento e lustração de pisos e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4399-1/99",
+    "desc_cnae": "Serviços especializados para construção (Calafetação)",
+    "item": "07.08",
+    "categoria": "Engenharia",
+    "desc_servico": "Calafetação.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8129-0/00",
+    "desc_cnae": "Atividades de limpeza não especificadas anteriormente",
+    "item": "07.09",
+    "categoria": "Engenharia",
+    "desc_servico": "Varrição, coleta, remoção, incineração, tratamento, reciclagem, separação e destinação final de lixo.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "8121-4/00",
+    "desc_cnae": "Limpeza em prédios e em domicílios",
+    "item": "07.10",
+    "categoria": "Engenharia",
+    "desc_servico": "Limpeza, manutenção e conservação de vias e logradouros públicos, imóveis, chaminés, piscinas, parques, jardins e congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "8130-3/00",
+    "desc_cnae": "Atividades paisagísticas",
+    "item": "07.11",
+    "categoria": "Engenharia",
+    "desc_servico": "Decoração e jardinagem, inclusive corte e poda de árvores.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "3821-1/00",
+    "desc_cnae": "Tratamento e disposição de resíduos não-perigosos",
+    "item": "07.12",
+    "categoria": "Engenharia",
+    "desc_servico": "Controle e tratamento de efluentes de qualquer natureza e de agentes físicos, químicos e biológicos.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "8122-2/00",
+    "desc_cnae": "Imunização e controle de pragas urbanas",
+    "item": "07.13",
+    "categoria": "Engenharia",
+    "desc_servico": "Dedetização, desinfecção, desinsetização, imunização, higienização, desratização, pulverização e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "0210-1/07",
+    "desc_cnae": "Extração de madeira em florestas plantadas",
+    "item": "07.16",
+    "categoria": "Engenharia",
+    "desc_servico": "Florestamento, reflorestamento, semeadura, adubação, reparação de solo, plantio, silagem, colheita, corte.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "4391-6/00",
+    "desc_cnae": "Obras de fundações",
+    "item": "07.17",
+    "categoria": "Engenharia",
+    "desc_servico": "Escoramento, contenção de encostas e serviços congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "4291-0/00",
+    "desc_cnae": "Obras portuárias, marítimas e fluviais",
+    "item": "07.18",
+    "categoria": "Engenharia",
+    "desc_servico": "Limpeza e dragagem de rios, portos, canais, baías, lagos, lagoas, represas, açudes e congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "7112-0/00",
+    "desc_cnae": "Serviços de engenharia",
+    "item": "07.19",
+    "categoria": "Engenharia",
+    "desc_servico": "Acompanhamento e fiscalização da execução de obras de engenharia, arquitetura e urbanismo.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "7119-7/01",
+    "desc_cnae": "Serviços de cartografia, topografia e geodésia",
+    "item": "07.20",
+    "categoria": "Engenharia",
+    "desc_servico": "Aerofotogrametria, cartografia, mapeamento, levantamentos topográficos, batimétricos, geográficos, geodésicos.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "0910-6/00",
+    "desc_cnae": "Atividades de apoio à extração de petróleo e gás natural",
+    "item": "07.21",
+    "categoria": "Engenharia",
+    "desc_servico": "Pesquisa, perfuração, cimentação, mergulho, perfilagem, concretação, testemunhagem, pescaria, estimulação.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7490-1/99",
+    "desc_cnae": "Outras atividades profissionais, científicas e técnicas não especificadas anteriormente",
+    "item": "07.22",
+    "categoria": "Engenharia",
+    "desc_servico": "Nucleação e bombardeamento de nuvens e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8513-9/00",
+    "desc_cnae": "Ensino fundamental",
+    "item": "08.01",
+    "categoria": "Educação",
+    "desc_servico": "Ensino regular pré-escolar, fundamental, médio e superior.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8599-6/01",
+    "desc_cnae": "Formação de condutores",
+    "item": "08.02",
+    "categoria": "Educação",
+    "desc_servico": "Instrução, treinamento, orientação pedagógica e educacional, avaliação de conhecimentos de qualquer natureza.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5510-8/01",
+    "desc_cnae": "Hotéis",
+    "item": "09.01",
+    "categoria": "Turismo",
+    "desc_servico": "Hospedagem de qualquer natureza em hotéis, apart-service condominiais, flat, apart-hotéis, motéis, pensões.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7911-2/00",
+    "desc_cnae": "Agências de viagens",
+    "item": "09.02",
+    "categoria": "Turismo",
+    "desc_servico": "Agenciamento, organização, promoção, intermediação e execução de programas de turismo.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7912-1/00",
+    "desc_cnae": "Operadores turísticos",
+    "item": "09.03",
+    "categoria": "Turismo",
+    "desc_servico": "Guias de turismo.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6612-6/03",
+    "desc_cnae": "Corretoras de câmbio",
+    "item": "10.01",
+    "categoria": "Intermediação",
+    "desc_servico": "Agenciamento, corretagem ou intermediação de câmbio, de seguros, de cartões de crédito.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6612-6/01",
+    "desc_cnae": "Corretoras de títulos e valores mobiliários",
+    "item": "10.02",
+    "categoria": "Intermediação",
+    "desc_servico": "Agenciamento, corretagem ou intermediação de títulos em geral, valores mobiliários e contratos quaisquer.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5811-5/00",
+    "desc_cnae": "Edição de livros",
+    "item": "10.03",
+    "categoria": "Intermediação",
+    "desc_servico": "Agenciamento, corretagem ou intermediação de direitos de propriedade industrial, artística ou literária.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7739-0/99",
+    "desc_cnae": "Aluguel de outras máquinas e equipamentos comerciais e industriais",
+    "item": "10.04",
+    "categoria": "Intermediação",
+    "desc_servico": "Agenciamento, corretagem ou intermediação de contratos de arrendamento mercantil (leasing), de franquia (franchising) e de faturização (factoring).",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6821-8/01",
+    "desc_cnae": "Corretagem na compra e venda e avaliação de imóveis",
+    "item": "10.05",
+    "categoria": "Intermediação",
+    "desc_servico": "Agenciamento, corretagem ou intermediação de bens móveis ou imóveis.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5232-0/00",
+    "desc_cnae": "Atividades de agenciamento marítimo",
+    "item": "10.06",
+    "categoria": "Intermediação",
+    "desc_servico": "Agenciamento marítimo.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6391-7/00",
+    "desc_cnae": "Agências de notícias",
+    "item": "10.07",
+    "categoria": "Intermediação",
+    "desc_servico": "Agenciamento de notícias.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7312-2/00",
+    "desc_cnae": "Agenciamento de espaços para publicidade",
+    "item": "10.08",
+    "categoria": "Intermediação",
+    "desc_servico": "Agenciamento de publicidade e propaganda, inclusive o agenciamento de veiculação por quaisquer meios.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4619-2/00",
+    "desc_cnae": "Representantes comerciais e agentes do comércio",
+    "item": "10.09",
+    "categoria": "Intermediação",
+    "desc_servico": "Representação de qualquer natureza, inclusive comercial.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5913-8/00",
+    "desc_cnae": "Distribuição cinematográfica, de vídeo e de programas de televisão",
+    "item": "10.10",
+    "categoria": "Intermediação",
+    "desc_servico": "Distribuição de bens de terceiros.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5223-1/00",
+    "desc_cnae": "Estacionamento de veículos",
+    "item": "11.01",
+    "categoria": "Vigilância",
+    "desc_servico": "Guarda e estacionamento de veículos terrestres automotores.",
+    "local_iss": "Local da Prestação",
+    "retencao": "Sim"
+  },
+  {
+    "cnae": "8011-1/01",
+    "desc_cnae": "Atividades de vigilância e segurança privada",
+    "item": "11.02",
+    "categoria": "Vigilância",
+    "desc_servico": "Vigilância, segurança ou monitoramento de bens, pessoas e semoventes.",
+    "local_iss": "Local da Prestação",
+    "retencao": "Sim"
+  },
+  {
+    "cnae": "5229-0/99",
+    "desc_cnae": "Outras atividades auxiliares dos transportes terrestres não especificadas anteriormente",
+    "item": "11.03",
+    "categoria": "Vigilância",
+    "desc_servico": "Escolta, inclusive de veículos e cargas.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5211-7/99",
+    "desc_cnae": "Depósitos de mercadorias para terceiros",
+    "item": "11.04",
+    "categoria": "Vigilância",
+    "desc_servico": "Armazenamento, depósito, carga, descarga, arrumação e guarda de bens de qualquer espécie.",
+    "local_iss": "Local da Prestação",
+    "retencao": "Sim"
+  },
+  {
+    "cnae": "9001-9/01",
+    "desc_cnae": "Produção teatral",
+    "item": "12.01",
+    "categoria": "Lazer",
+    "desc_servico": "Espetáculos teatrais.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "5914-6/00",
+    "desc_cnae": "Atividades de exibição cinematográfica",
+    "item": "12.02",
+    "categoria": "Lazer",
+    "desc_servico": "Exibições cinematográficas.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9001-9/04",
+    "desc_cnae": "Atividades de produção de espetáculos circenses, de marionetes e similares",
+    "item": "12.03",
+    "categoria": "Lazer",
+    "desc_servico": "Espetáculos circenses.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9001-9/99",
+    "desc_cnae": "Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente",
+    "item": "12.04",
+    "categoria": "Lazer",
+    "desc_servico": "Programas de auditório.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9321-2/00",
+    "desc_cnae": "Parques de diversão e parques temáticos",
+    "item": "12.05",
+    "categoria": "Lazer",
+    "desc_servico": "Parques de diversões, centros de lazer e congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9329-8/01",
+    "desc_cnae": "Discotecas, danceterias, salões de dança e similares",
+    "item": "12.06",
+    "categoria": "Lazer",
+    "desc_servico": "Boates, taxi-dancing e congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9001-9/02",
+    "desc_cnae": "Produção musical",
+    "item": "12.07",
+    "categoria": "Lazer",
+    "desc_servico": "Shows, ballet, danças, desfiles, bailes, óperas, concertos, recitais, festivais e congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "8230-0/01",
+    "desc_cnae": "Serviços de organização de feiras, congressos, exposições e festas",
+    "item": "12.08",
+    "categoria": "Lazer",
+    "desc_servico": "Feiras, exposições, congressos e congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9200-3/99",
+    "desc_cnae": "Exploração de jogos de azar e apostas não especificados anteriormente",
+    "item": "12.09",
+    "categoria": "Lazer",
+    "desc_servico": "Bilhares, boliches e diversões eletrônicas ou não.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9319-1/01",
+    "desc_cnae": "Produção e promoção de eventos esportivos",
+    "item": "12.10",
+    "categoria": "Lazer",
+    "desc_servico": "Corridas e competições de animais.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9319-1/01",
+    "desc_cnae": "Produção e promoção de eventos esportivos (Competições)",
+    "item": "12.11",
+    "categoria": "Lazer",
+    "desc_servico": "Competições esportivas ou de destreza física ou intelectual.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9001-9/02",
+    "desc_cnae": "Produção musical",
+    "item": "12.12",
+    "categoria": "Lazer",
+    "desc_servico": "Execução de música.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9001-9/02",
+    "desc_cnae": "Produção musical",
+    "item": "12.13",
+    "categoria": "Lazer",
+    "desc_servico": "Produção, mediante ou sem encomenda prévia, de eventos, espetáculos e shows.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9001-9/06",
+    "desc_cnae": "Atividades de sonorização e de iluminação",
+    "item": "12.14",
+    "categoria": "Lazer",
+    "desc_servico": "Fornecimento de música para ambientes fechados ou não.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9001-9/06",
+    "desc_cnae": "Atividades de sonorização e de iluminação (Desfiles)",
+    "item": "12.15",
+    "categoria": "Lazer",
+    "desc_servico": "Desfiles de blocos carnavalescos ou folclóricos, trios elétricos e congêneres.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "9001-9/99",
+    "desc_cnae": "Artes cênicas, espetáculos e atividades complementares não especificadas anteriormente",
+    "item": "12.16",
+    "categoria": "Lazer",
+    "desc_servico": "Exibição de filmes, entrevistas, musicais, espetáculos, shows, concertos, desfiles.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9329-8/99",
+    "desc_cnae": "Outras atividades de recreação e lazer não especificadas anteriormente",
+    "item": "12.17",
+    "categoria": "Lazer",
+    "desc_servico": "Recreação e animação, inclusive em festas e eventos de qualquer natureza.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "1830-0/03",
+    "desc_cnae": "Reprodução de som em qualquer suporte",
+    "item": "13.02",
+    "categoria": "Fotografia",
+    "desc_servico": "Fonografia ou gravação de sons, inclusive trucagem, dublagem, mixagem e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "1830-0/01",
+    "desc_cnae": "Produção de cópias de discos, fitas, CD, DVD e vídeos musicais",
+    "item": "13.02",
+    "categoria": "Fotografia",
+    "desc_servico": "Fonografia ou gravação de sons.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7420-0/01",
+    "desc_cnae": "Atividades de produção de fotografias, exceto aérea e submarina",
+    "item": "13.03",
+    "categoria": "Fotografia",
+    "desc_servico": "Fotografia e cinematografia, inclusive revelação, ampliação, cópia, reprodução.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8219-9/01",
+    "desc_cnae": "Fotocópias",
+    "item": "13.04",
+    "categoria": "Fotografia",
+    "desc_servico": "Reprografia, microfilmagem e digitalização.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "1811-3/02",
+    "desc_cnae": "Impressão de livros, revistas e outras publicações periódicas",
+    "item": "13.05",
+    "categoria": "Fotografia",
+    "desc_servico": "Composição gráfica, inclusive confecção de impressos gráficos, fotocomposição, clicheria.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4520-0/01",
+    "desc_cnae": "Serviços de manutenção e reparação mecânica de veículos automotores",
+    "item": "14.01",
+    "categoria": "Manutenção",
+    "desc_servico": "Lubrificação, limpeza, lustração, revisão, carga e recarga, conserto, restauração.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "3314-7/10",
+    "desc_cnae": "Manutenção e reparação de máquinas e equipamentos para uso geral não especificados anteriormente",
+    "item": "14.01",
+    "categoria": "Manutenção",
+    "desc_servico": "Manutenção e conservação de máquinas, veículos, aparelhos, equipamentos, motores.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9511-8/00",
+    "desc_cnae": "Reparação e manutenção de computadores e de equipamentos periféricos",
+    "item": "14.02",
+    "categoria": "Manutenção",
+    "desc_servico": "Assistência técnica.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "2950-6/00",
+    "desc_cnae": "Recondicionamento e recuperação de motores para veículos automotores",
+    "item": "14.03",
+    "categoria": "Manutenção",
+    "desc_servico": "Recondicionamento de motores.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "2212-9/00",
+    "desc_cnae": "Reforma de pneumáticos usados",
+    "item": "14.04",
+    "categoria": "Manutenção",
+    "desc_servico": "Recauchutagem ou regeneração de pneus.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4520-0/02",
+    "desc_cnae": "Serviços de lanternagem ou funilaria e pintura de veículos automotores",
+    "item": "14.05",
+    "categoria": "Manutenção",
+    "desc_servico": "Restauração, recondicionamento, acondicionamento, pintura, beneficiamento.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "3321-0/00",
+    "desc_cnae": "Instalação de máquinas e equipamentos industriais",
+    "item": "14.06",
+    "categoria": "Manutenção",
+    "desc_servico": "Instalação e montagem de aparelhos, máquinas e equipamentos, inclusive montagem industrial.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "3329-5/01",
+    "desc_cnae": "Serviços de montagem de móveis de qualquer material",
+    "item": "14.06",
+    "categoria": "Manutenção",
+    "desc_servico": "Instalação e montagem de aparelhos, máquinas e equipamentos.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "1629-3/01",
+    "desc_cnae": "Fabricação de artefatos de tanoaria e de embalagens de madeira",
+    "item": "14.07",
+    "categoria": "Manutenção",
+    "desc_servico": "Colocação de molduras e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "1822-9/99",
+    "desc_cnae": "Serviços de acabamentos gráficos, exceto encadernação e plastificação",
+    "item": "14.08",
+    "categoria": "Manutenção",
+    "desc_servico": "Encadernação, gravação e douração de livros, revistas e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "1412-6/02",
+    "desc_cnae": "Confecção, sob medida, de peças do vestuário, exceto roupas íntimas",
+    "item": "14.09",
+    "categoria": "Manutenção",
+    "desc_servico": "Alfaiataria e costura, quando o material for fornecido pelo usuário final, exceto aviamento.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9601-1/01",
+    "desc_cnae": "Lavanderias",
+    "item": "14.10",
+    "categoria": "Manutenção",
+    "desc_servico": "Tinturaria e lavanderia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4520-0/08",
+    "desc_cnae": "Serviços de capotaria",
+    "item": "14.11",
+    "categoria": "Manutenção",
+    "desc_servico": "Tapeçaria e reforma de estofamentos em geral.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4520-0/02",
+    "desc_cnae": "Serviços de lanternagem ou funilaria e pintura de veículos automotores (Funilaria)",
+    "item": "14.12",
+    "categoria": "Manutenção",
+    "desc_servico": "Funilaria e lanternagem.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "1622-6/99",
+    "desc_cnae": "Fabricação de outros artigos de carpintaria para construção",
+    "item": "14.13",
+    "categoria": "Manutenção",
+    "desc_servico": "Carpintaria e serralheria.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5229-0/02",
+    "desc_cnae": "Serviços de reboque de veículos",
+    "item": "14.14",
+    "categoria": "Manutenção",
+    "desc_servico": "Guincho intramunicipal, guindaste e içamento.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.01",
+    "categoria": "Financeiro",
+    "desc_servico": "Administração de fundos quaisquer, de consórcio, de cartão de crédito.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.02",
+    "categoria": "Financeiro",
+    "desc_servico": "Abertura de contas em geral, inclusive conta-corrente.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.03",
+    "categoria": "Financeiro",
+    "desc_servico": "Locação e manutenção de cofres particulares, de terminais eletrônicos.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.04",
+    "categoria": "Financeiro",
+    "desc_servico": "Fornecimento ou emissão de atestados em geral.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.05",
+    "categoria": "Financeiro",
+    "desc_servico": "Cadastro, elaboração de ficha cadastral.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.06",
+    "categoria": "Financeiro",
+    "desc_servico": "Emissão, reemissão e fornecimento de avisos, comprovantes.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.07",
+    "categoria": "Financeiro",
+    "desc_servico": "Acesso, movimentação, atendimento e consulta a contas em geral.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.08",
+    "categoria": "Financeiro",
+    "desc_servico": "Emissão, reemissão, alteração, cessão, substituição, cancelamento e registro de contrato.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6440-9/00",
+    "desc_cnae": "Arrendamento mercantil",
+    "item": "15.09",
+    "categoria": "Financeiro",
+    "desc_servico": "Arrendamento mercantil (leasing) de quaisquer bens.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.10",
+    "categoria": "Financeiro",
+    "desc_servico": "Serviços relacionados a cobranças, recebimentos ou pagamentos em geral.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.11",
+    "categoria": "Financeiro",
+    "desc_servico": "Devolução de títulos, protesto de títulos, sustação de protesto.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.12",
+    "categoria": "Financeiro",
+    "desc_servico": "Custódia em geral, inclusive de títulos e valores mobiliários.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.13",
+    "categoria": "Financeiro",
+    "desc_servico": "Serviços relacionados a operações de câmbio em geral.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.14",
+    "categoria": "Financeiro",
+    "desc_servico": "Fornecimento, emissão, reemissão, renovação e manutenção de cartão magnético.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.15",
+    "categoria": "Financeiro",
+    "desc_servico": "Compensação de cheques e títulos quaisquer.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.16",
+    "categoria": "Financeiro",
+    "desc_servico": "Emissão, reemissão, liquidação, alteração, cancelamento e baixa de ordens de pagamento.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.17",
+    "categoria": "Financeiro",
+    "desc_servico": "Emissão, fornecimento, devolução, sustação, cancelamento e oposição de cheques.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6421-2/00",
+    "desc_cnae": "Bancos comerciais",
+    "item": "15.18",
+    "categoria": "Financeiro",
+    "desc_servico": "Serviços relacionados a crédito imobiliário.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "4921-3/01",
+    "desc_cnae": "Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal",
+    "item": "16.01",
+    "categoria": "Transporte",
+    "desc_servico": "Serviços de transporte coletivo municipal.",
+    "local_iss": "Local da Prestação",
+    "retencao": "Sim"
+  },
+  {
+    "cnae": "4923-0/01",
+    "desc_cnae": "Serviço de táxi",
+    "item": "16.02",
+    "categoria": "Transporte",
+    "desc_servico": "Outros serviços de transporte de natureza municipal.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7020-4/00",
+    "desc_cnae": "Atividades de consultoria em gestão empresarial",
+    "item": "17.01",
+    "categoria": "Administrativo",
+    "desc_servico": "Assessoria ou consultoria de qualquer natureza.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8219-9/99",
+    "desc_cnae": "Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente",
+    "item": "17.02",
+    "categoria": "Administrativo",
+    "desc_servico": "Datilografia, digitação, estenografia, expediente, secretaria em geral.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7020-4/00",
+    "desc_cnae": "Atividades de consultoria em gestão empresarial (Planejamento)",
+    "item": "17.03",
+    "categoria": "Administrativo",
+    "desc_servico": "Planejamento, coordenação, programação ou organização técnica.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7810-8/00",
+    "desc_cnae": "Seleção e agenciamento de mão-de-obra",
+    "item": "17.04",
+    "categoria": "Administrativo",
+    "desc_servico": "Recrutamento, agenciamento, seleção e colocação de mão-de-obra.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7820-5/00",
+    "desc_cnae": "Locação de mão-de-obra temporária",
+    "item": "17.05",
+    "categoria": "Administrativo",
+    "desc_servico": "Fornecimento de mão-de-obra, mesmo em caráter temporário.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "7311-4/00",
+    "desc_cnae": "Agências de publicidade",
+    "item": "17.06",
+    "categoria": "Administrativo",
+    "desc_servico": "Propaganda e publicidade, inclusive promoção de vendas.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7740-3/00",
+    "desc_cnae": "Gestão de ativos intangíveis não-financeiros",
+    "item": "17.08",
+    "categoria": "Administrativo",
+    "desc_servico": "Franquia (franchising).",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6911-7/02",
+    "desc_cnae": "Atividades auxiliares da justiça",
+    "item": "17.09",
+    "categoria": "Administrativo",
+    "desc_servico": "Perícias, laudos, exames técnicos e análises técnicas.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8230-0/01",
+    "desc_cnae": "Serviços de organização de feiras, congressos, exposições e festas",
+    "item": "17.10",
+    "categoria": "Administrativo",
+    "desc_servico": "Planejamento, organização e administração de feiras, exposições, congressos.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "5620-1/02",
+    "desc_cnae": "Serviços de alimentação para eventos e recepções - bufê",
+    "item": "17.11",
+    "categoria": "Administrativo",
+    "desc_servico": "Organização de festas e recepções; bufê.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6822-6/00",
+    "desc_cnae": "Gestão e administração da propriedade imobiliária",
+    "item": "17.12",
+    "categoria": "Administrativo",
+    "desc_servico": "Administração em geral, inclusive de bens e negócios de terceiros.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8299-7/04",
+    "desc_cnae": "Leiloeiros independentes",
+    "item": "17.13",
+    "categoria": "Administrativo",
+    "desc_servico": "Leilão e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6911-7/01",
+    "desc_cnae": "Serviços advocatícios",
+    "item": "17.14",
+    "categoria": "Administrativo",
+    "desc_servico": "Advocacia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6911-7/02",
+    "desc_cnae": "Atividades auxiliares da justiça (Arbitragem)",
+    "item": "17.15",
+    "categoria": "Administrativo",
+    "desc_servico": "Arbitragem de qualquer espécie, inclusive jurídica.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6920-6/02",
+    "desc_cnae": "Atividades de consultoria e auditoria contábil e tributária",
+    "item": "17.16",
+    "categoria": "Administrativo",
+    "desc_servico": "Auditoria.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7020-4/00",
+    "desc_cnae": "Atividades de consultoria em gestão empresarial (O&M)",
+    "item": "17.17",
+    "categoria": "Administrativo",
+    "desc_servico": "Análise de Organização e Métodos.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6621-5/02",
+    "desc_cnae": "Auditoria e consultoria atuarial",
+    "item": "17.18",
+    "categoria": "Administrativo",
+    "desc_servico": "Atuária e cálculos técnicos de qualquer natureza.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6920-6/01",
+    "desc_cnae": "Atividades de contabilidade",
+    "item": "17.19",
+    "categoria": "Administrativo",
+    "desc_servico": "Contabilidade, inclusive serviços técnicos e auxiliares.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7020-4/00",
+    "desc_cnae": "Atividades de consultoria em gestão empresarial",
+    "item": "17.20",
+    "categoria": "Administrativo",
+    "desc_servico": "Consultoria e assessoria econômica ou financeira.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7320-3/00",
+    "desc_cnae": "Pesquisas de mercado e de opinião pública",
+    "item": "17.21",
+    "categoria": "Administrativo",
+    "desc_servico": "Estatística.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8291-1/00",
+    "desc_cnae": "Atividades de cobrança e informações cadastrais",
+    "item": "17.22",
+    "categoria": "Administrativo",
+    "desc_servico": "Cobrança em geral.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6491-3/00",
+    "desc_cnae": "Sociedades de fomento mercantil - factoring",
+    "item": "17.23",
+    "categoria": "Administrativo",
+    "desc_servico": "Assessoria, análise, avaliação, atendimento, consulta, cadastro, seleção, gerenciamento de informações (Factoring).",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8599-6/04",
+    "desc_cnae": "Treinamento em desenvolvimento profissional e gerencial",
+    "item": "17.24",
+    "categoria": "Administrativo",
+    "desc_servico": "Apresentação de palestras, conferências, seminários e congêneres.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7312-2/00",
+    "desc_cnae": "Agenciamento de espaços para publicidade",
+    "item": "17.25",
+    "categoria": "Administrativo",
+    "desc_servico": "Inserção de textos, desenhos e outros materiais de propaganda e publicidade.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6621-5/01",
+    "desc_cnae": "Peritos e avaliadores de seguros",
+    "item": "18.01",
+    "categoria": "Seguros",
+    "desc_servico": "Serviços de regulação de sinistros vinculados a contratos de seguros.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8299-7/06",
+    "desc_cnae": "Casas lotéricas",
+    "item": "19.01",
+    "categoria": "Lotéricos",
+    "desc_servico": "Serviços de distribuição e venda de bilhetes e demais produtos de loteria.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5231-1/01",
+    "desc_cnae": "Administração da infra-estrutura portuária",
+    "item": "20.01",
+    "categoria": "Portuário",
+    "desc_servico": "Serviços portuários, ferroportuários, utilização de porto.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "5240-1/01",
+    "desc_cnae": "Operação dos aeroportos e campos de aterrissagem",
+    "item": "20.02",
+    "categoria": "Aeroportuário",
+    "desc_servico": "Serviços aeroportuários, utilização de aeroporto.",
+    "local_iss": "Local da Prestação", "retencao": "Sim"
+  },
+  {
+    "cnae": "5222-2/00",
+    "desc_cnae": "Terminais rodoviários e ferroviários",
+    "item": "20.03",
+    "categoria": "Portuário",
+    "desc_servico": "Serviços de terminais rodoviários, ferroviários, metroviários.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6912-5/00",
+    "desc_cnae": "Cartórios",
+    "item": "21.01",
+    "categoria": "Cartorário",
+    "desc_servico": "Serviços de registros públicos, cartorários e notariais.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5221-4/00",
+    "desc_cnae": "Concessionárias de rodovias, pontes, túneis e serviços relacionados",
+    "item": "22.01",
+    "categoria": "Rodoviário",
+    "desc_servico": "Serviços de exploração de rodovia mediante cobrança de preço ou pedágio.",
+    "local_iss": "Local da Prestação", "retencao": "Não"
+  },
+  {
+    "cnae": "7410-2/03",
+    "desc_cnae": "Design de produto",
+    "item": "23.01",
+    "categoria": "Design",
+    "desc_servico": "Serviços de programação e comunicação visual, desenho industrial.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9529-1/02",
+    "desc_cnae": "Chaveiros",
+    "item": "24.01",
+    "categoria": "Chaveiro",
+    "desc_servico": "Serviços de chaveiros, confecção de carimbos, placas.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9603-3/04",
+    "desc_cnae": "Serviços de funerárias",
+    "item": "25.01",
+    "categoria": "Funerário",
+    "desc_servico": "Funerais, inclusive fornecimento de caixão, urna ou esquifes.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9603-3/02",
+    "desc_cnae": "Serviços de cremação",
+    "item": "25.02",
+    "categoria": "Funerário",
+    "desc_servico": "Translado intramunicipal e cremação de corpos.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6511-1/02",
+    "desc_cnae": "Planos de auxílio-funeral",
+    "item": "25.03",
+    "categoria": "Funerário",
+    "desc_servico": "Planos ou convênio funerários.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9603-3/03",
+    "desc_cnae": "Serviços de sepultamento",
+    "item": "25.04",
+    "categoria": "Funerário",
+    "desc_servico": "Manutenção e conservação de jazigos e cemitérios.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9603-3/01",
+    "desc_cnae": "Gestão e manutenção de cemitérios",
+    "item": "25.05",
+    "categoria": "Funerário",
+    "desc_servico": "Cessão de uso de espaços em cemitérios para sepultamento.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5310-5/01",
+    "desc_cnae": "Atividades do Correio Nacional",
+    "item": "26.01",
+    "categoria": "Postal",
+    "desc_servico": "Serviços de coleta, remessa ou entrega de correspondências.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8800-6/00",
+    "desc_cnae": "Serviços de assistência social sem alojamento",
+    "item": "27.01",
+    "categoria": "Social",
+    "desc_servico": "Serviços de assistência social.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6821-8/01",
+    "desc_cnae": "Corretagem na compra e venda e avaliação de imóveis",
+    "item": "28.01",
+    "categoria": "Avaliação",
+    "desc_servico": "Serviços de avaliação de bens e serviços de qualquer natureza.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9101-5/00",
+    "desc_cnae": "Atividades de bibliotecas e arquivos",
+    "item": "29.01",
+    "categoria": "Biblioteca",
+    "desc_servico": "Serviços de biblioteconomia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7210-0/00",
+    "desc_cnae": "Pesquisa e desenvolvimento em ciências físicas e naturais",
+    "item": "30.01",
+    "categoria": "Biologia",
+    "desc_servico": "Serviços de biologia, biotecnologia e química.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6399-2/00",
+    "desc_cnae": "Outras atividades de prestação de serviços de informação não especificadas anteriormente",
+    "item": "31.01",
+    "categoria": "Técnico",
+    "desc_servico": "Serviços técnicos em edificações, eletrônica, eletrotécnica, mecânica.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7119-7/03",
+    "desc_cnae": "Serviços de desenho técnico relacionados à arquitetura e engenharia",
+    "item": "32.01",
+    "categoria": "Desenho",
+    "desc_servico": "Serviços de desenhos técnicos.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "5250-8/01",
+    "desc_cnae": "Comissaria de despachos",
+    "item": "33.01",
+    "categoria": "Despachante",
+    "desc_servico": "Serviços de desembaraço aduaneiro, comissários, despachantes.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "8030-7/00",
+    "desc_cnae": "Atividades de investigação particular",
+    "item": "34.01",
+    "categoria": "Investigação",
+    "desc_servico": "Serviços de investigações particulares, detetives.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9002-7/01",
+    "desc_cnae": "Atividades de artistas plásticos, jornalistas independentes e escritores",
+    "item": "35.01",
+    "categoria": "Jornalismo",
+    "desc_servico": "Serviços de reportagem, assessoria de imprensa, jornalismo.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7490-1/99",
+    "desc_cnae": "Outras atividades profissionais, científicas e técnicas não especificadas anteriormente",
+    "item": "36.01",
+    "categoria": "Meteorologia",
+    "desc_servico": "Serviços de meteorologia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "7490-1/05",
+    "desc_cnae": "Agenciamento de profissionais para atividades esportivas, culturais e artísticas",
+    "item": "37.01",
+    "categoria": "Artístico",
+    "desc_servico": "Serviços de artistas, atletas, modelos e manequins.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9102-3/01",
+    "desc_cnae": "Atividades de museus e de exploração de lugares e prédios históricos",
+    "item": "38.01",
+    "categoria": "Museologia",
+    "desc_servico": "Serviços de museologia.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "3211-6/01",
+    "desc_cnae": "Lapidação de gemas",
+    "item": "39.01",
+    "categoria": "Ourivesaria",
+    "desc_servico": "Serviços de ourivesaria e lapidação.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "9002-7/01",
+    "desc_cnae": "Atividades de artistas plásticos",
+    "item": "40.01",
+    "categoria": "Arte",
+    "desc_servico": "Obras de arte sob encomenda.",
+    "local_iss": "Prestador", "retencao": "Não"
+  },
+  {
+    "cnae": "6021-7/00",
+    "desc_cnae": "Atividades de televisão aberta",
+    "item": "99.99",
+    "categoria": "Outros",
+    "desc_servico": "Veiculação de publicidade e outras situações de não incidência.",
+    "local_iss": "Não Incide",
+    "retencao": "Não"
+  }
+]
