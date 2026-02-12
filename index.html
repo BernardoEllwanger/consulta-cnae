@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CNAE</title>
+    <meta name="description" content="Busca de CNAE correlacionado com a Lista de Serviços da LC 116/2003">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --primary: #1f2937;
+            --primary-dark: #111827;
+            --primary-light: #374151;
+            --accent-blue: #2563eb;
+            --accent: #f59e0b;
+            --bg: #f3f4f6;
+            --surface: #ffffff;
+            --text: #111827;
+            --text-muted: #6b7280;
+            --border: #e5e7eb;
+            --success: #16a34a;
+            --danger: #dc2626;
+            --radius: 8px;
+            --radius-lg: 12px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.07);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: #fff;
+            padding: 28px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .header .subtitle {
+            font-size: 0.88rem;
+            opacity: 0.8;
+            margin-top: 4px;
+            font-weight: 400;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 24px 20px;
+            flex: 1;
+        }
+
+        /* Search Card */
+        .search-card {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 20px;
+        }
+        .search-form {
+            display: flex;
+            gap: 12px;
+            align-items: flex-end;
+        }
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .form-group label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .search-input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+            outline: none;
+        }
+        .search-input:focus {
+            border-color: var(--accent-blue);
+        }
+        .search-input::placeholder {
+            color: #9ca3af;
+        }
+
+        /* Custom Select */
+        .custom-select {
+            position: relative;
+        }
+        .select-trigger {
+            width: 100%;
+            padding: 10px 14px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 0.95rem;
+            font-family: inherit;
+            background: var(--surface);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: border-color 0.2s;
+            color: var(--text);
+            user-select: none;
+        }
+        .select-trigger:hover,
+        .select-trigger.open {
+            border-color: var(--accent-blue);
+        }
+        .select-trigger .arrow {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            transition: transform 0.2s;
+        }
+        .select-trigger.open .arrow {
+            transform: rotate(180deg);
+        }
+        .select-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            right: 0;
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            max-height: 260px;
+            overflow-y: auto;
+            z-index: 50;
+        }
+        .select-dropdown.open {
+            display: block;
+        }
+        .select-option {
+            padding: 8px 14px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.1s;
+        }
+        .select-option:hover,
+        .select-option.highlighted {
+            background: #eff6ff;
+        }
+        .select-option.selected {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        /* Autocomplete */
+        .autocomplete-wrapper {
+            position: relative;
+        }
+        .autocomplete-list {
+            display: none;
+            position: absolute;
+            top: calc(100% + 4px);
+            left: 0;
+            right: 0;
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            max-height: 320px;
+            overflow-y: auto;
+            z-index: 50;
+        }
+        .autocomplete-list.open {
+            display: block;
+        }
+        .autocomplete-item {
+            padding: 10px 14px;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.1s;
+        }
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+        .autocomplete-item:hover,
+        .autocomplete-item.highlighted {
+            background: #eff6ff;
+        }
+        .autocomplete-item .ac-cnae {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--accent-blue);
+            font-family: 'Courier New', monospace;
+        }
+        .autocomplete-item .ac-desc {
+            font-size: 0.88rem;
+            color: var(--text);
+            margin-top: 2px;
+        }
+        .autocomplete-item .ac-cat {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Buttons */
+        .btn-search {
+            padding: 10px 24px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 0.95rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.2s;
+        }
+        .btn-search:hover {
+            background: var(--primary-dark);
+        }
+        .btn-clear {
+            padding: 10px 16px;
+            background: transparent;
+            color: var(--text-muted);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 0.95rem;
+            font-family: inherit;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+        .btn-clear:hover {
+            border-color: var(--danger);
+            color: var(--danger);
+        }
+
+        /* Stats */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .stat-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 14px 16px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .stat-card .stat-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        .stat-card .stat-label {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* Category Buttons */
+        .categories-section {
+            margin-top: 16px;
+        }
+        .categories-section h3 {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+        .category-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .cat-btn {
+            padding: 6px 14px;
+            background: #f3f4f6;
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        .cat-btn:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        /* Welcome */
+        .welcome {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+        }
+        .welcome p {
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+        .welcome .kbd {
+            display: inline-block;
+            padding: 2px 7px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-family: 'Courier New', monospace;
+            color: var(--text-muted);
+        }
+
+        /* Results Table */
+        .table-card {
+            background: var(--surface);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .results-header {
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .results-header .results-count {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+        .results-header .results-count strong {
+            color: var(--text);
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead th {
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            white-space: nowrap;
+        }
+        tbody tr {
+            border-bottom: 1px solid var(--border);
+            transition: background 0.1s;
+        }
+        tbody tr:hover {
+            background: #f9fafb;
+        }
+        tbody td {
+            padding: 12px 14px;
+            font-size: 0.88rem;
+            vertical-align: top;
+        }
+        tbody tr:nth-child(even) {
+            background: #fafafa;
+        }
+        tbody tr:nth-child(even):hover {
+            background: #f3f4f6;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .badge-cnae {
+            background: rgba(31, 41, 55, 0.08);
+            color: var(--primary);
+            font-family: 'Courier New', monospace;
+        }
+        .badge-item {
+            background: rgba(245, 158, 11, 0.15);
+            color: #92400e;
+            font-family: 'Courier New', monospace;
+        }
+        .badge-prestador {
+            background: #dcfce7;
+            color: #166534;
+        }
+        .badge-local {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .badge-nao-incide {
+            background: #f3f4f6;
+            color: var(--text-muted);
+        }
+        .badge-ret-sim {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        .badge-ret-nao {
+            background: #f3f4f6;
+            color: var(--text-muted);
+        }
+
+        mark {
+            background: #fef08a;
+            color: inherit;
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            padding: 16px 20px;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+        .pagination button {
+            padding: 6px 12px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--surface);
+            font-size: 0.85rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text);
+        }
+        .pagination button:hover {
+            border-color: var(--primary-light);
+            color: var(--primary);
+        }
+        .pagination button.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+        .pagination button:disabled {
+            opacity: 0.4;
+            cursor: default;
+        }
+        .pagination .page-info {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin: 0 8px;
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+        }
+        .no-results p {
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: #9ca3af;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.82rem;
+            margin-top: auto;
+        }
+        .footer a {
+            color: #d1d5db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+        .footer a svg {
+            width: 14px;
+            height: 14px;
+            vertical-align: -2px;
+            margin-left: 4px;
+            fill: currentColor;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px 16px;
+            }
+            .header h1 {
+                font-size: 1.3rem;
+            }
+            .search-form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-form .form-group {
+                width: 100%;
+            }
+            .btn-search, .btn-clear {
+                width: 100%;
+                text-align: center;
+            }
+            .stats-bar {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+            .stat-card {
+                padding: 10px 8px;
+            }
+            .stat-card .stat-value {
+                font-size: 1.15rem;
+            }
+            .stat-card .stat-label {
+                font-size: 0.72rem;
+            }
+            .category-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            /* Table to cards */
+            .table-responsive table thead {
+                display: none;
+            }
+            .table-responsive table,
+            .table-responsive table tbody,
+            .table-responsive table tr,
+            .table-responsive table td {
+                display: block;
+                width: 100%;
+            }
+            .table-responsive table tr {
+                padding: 14px;
+                margin-bottom: 8px;
+                border: 1px solid var(--border);
+                border-radius: var(--radius);
+                background: var(--surface);
+            }
+            .table-responsive table tr:nth-child(even) {
+                background: var(--surface);
+            }
+            .table-responsive table td {
+                padding: 4px 0;
+                border: none;
+                text-align: left;
+            }
+            .table-responsive table td::before {
+                content: attr(data-label);
+                display: block;
+                font-size: 0.72rem;
+                font-weight: 600;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                margin-bottom: 2px;
+            }
+        }
+
+        @media print {
+            .header, .footer, .search-card, .pagination, .stats-bar, .welcome, .categories-section {
+                display: none;
+            }
+            .table-card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+            }
+            body {
+                background: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Consulta CNAE</h1>
+        <p class="subtitle">CNAE &times; Lista de Servi&ccedil;os LC 116/2003</p>
+    </header>
+
+    <div class="container">
+        <div class="search-card">
+            <div class="search-form" id="searchForm">
+                <div class="form-group" style="flex: 2;">
+                    <label for="searchInput">Buscar</label>
+                    <div class="autocomplete-wrapper">
+                        <input type="text" id="searchInput" class="search-input"
+                               placeholder="CNAE, item LC ou descri&ccedil;&atilde;o do servi&ccedil;o..."
+                               autocomplete="off">
+                        <div class="autocomplete-list" id="autocompleteList"></div>
+                    </div>
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>Categoria</label>
+                    <div class="custom-select" id="categorySelect">
+                        <div class="select-trigger" id="selectTrigger">
+                            <span id="selectText">Todas</span>
+                            <span class="arrow">&#9660;</span>
+                        </div>
+                        <div class="select-dropdown" id="selectDropdown"></div>
+                    </div>
+                </div>
+                <button class="btn-search" id="btnSearch">Buscar</button>
+                <button class="btn-clear" id="btnClear" style="display:none;">Limpar</button>
+            </div>
+        </div>
+
+        <div class="stats-bar" id="statsBar">
+            <div class="stat-card">
+                <div class="stat-value" id="statTotal">0</div>
+                <div class="stat-label">Registros</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statCnaes">0</div>
+                <div class="stat-label">CNAEs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="statItens">0</div>
+                <div class="stat-label">Itens LC</div>
+            </div>
+        </div>
+
+        <div id="welcomeState" class="welcome">
+            <p>Digite um c&oacute;digo CNAE, item da LC 116 ou descri&ccedil;&atilde;o para buscar.</p>
+            <p>Atalho: <span class="kbd">Ctrl+K</span></p>
+            <div class="categories-section" id="categoriesSection">
+                <h3>Ou filtre por categoria:</h3>
+                <div class="category-buttons" id="categoryButtons"></div>
+            </div>
+        </div>
+
+        <div id="resultsArea" style="display:none;"></div>
+    </div>
+
+    <footer class="footer">
+        <p>Dados baseados na LC 116/2003 &middot; <a href="https://www.linkedin.com/in/bernardo-ellwanger" target="_blank" rel="noopener noreferrer">Bernardo Ellwanger<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></p>
+    </footer>
+
+    <script>
+        var dados = [];
+        var categoriaAtual = '';
+        var termoAtual = '';
+        var paginaAtual = 1;
+        var resultadosAtuais = [];
+        var POR_PAGINA = 15;
+        var acIndex = -1;
+
+        // Carrega dados
+        fetch('dados.json')
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                dados = data;
+                inicializar();
+            });
+
+        function inicializar() {
+            // Stats
+            var cnaesUnicos = [];
+            var itensUnicos = [];
+            for (var i = 0; i < dados.length; i++) {
+                if (cnaesUnicos.indexOf(dados[i].cnae) === -1) cnaesUnicos.push(dados[i].cnae);
+                if (itensUnicos.indexOf(dados[i].item) === -1) itensUnicos.push(dados[i].item);
+            }
+            document.getElementById('statTotal').textContent = dados.length;
+            document.getElementById('statCnaes').textContent = cnaesUnicos.length;
+            document.getElementById('statItens').textContent = itensUnicos.length;
+
+            // Categorias
+            var cats = [];
+            for (var i = 0; i < dados.length; i++) {
+                if (dados[i].categoria && cats.indexOf(dados[i].categoria) === -1) {
+                    cats.push(dados[i].categoria);
+                }
+            }
+            cats.sort();
+            montarDropdown(cats);
+            montarBotoesCategorias(cats);
+        }
+
+        function montarDropdown(cats) {
+            var dropdown = document.getElementById('selectDropdown');
+            var html = '<div class="select-option selected" data-value="">Todas</div>';
+            for (var i = 0; i < cats.length; i++) {
+                html += '<div class="select-option" data-value="' + escapeHtml(cats[i]) + '">' + escapeHtml(cats[i]) + '</div>';
+            }
+            dropdown.innerHTML = html;
+
+            var opts = dropdown.querySelectorAll('.select-option');
+            for (var j = 0; j < opts.length; j++) {
+                opts[j].addEventListener('click', function() {
+                    selecionarCategoria(this.getAttribute('data-value'));
+                });
+            }
+        }
+
+        function montarBotoesCategorias(cats) {
+            var container = document.getElementById('categoryButtons');
+            var html = '';
+            for (var i = 0; i < cats.length; i++) {
+                html += '<button class="cat-btn" data-cat="' + escapeHtml(cats[i]) + '">' + escapeHtml(cats[i]) + '</button>';
+            }
+            container.innerHTML = html;
+
+            var btns = container.querySelectorAll('.cat-btn');
+            for (var j = 0; j < btns.length; j++) {
+                btns[j].addEventListener('click', function() {
+                    selecionarCategoria(this.getAttribute('data-cat'));
+                    executarBusca();
+                });
+            }
+        }
+
+        function selecionarCategoria(valor) {
+            categoriaAtual = valor;
+            document.getElementById('selectText').textContent = valor || 'Todas';
+            fecharDropdown();
+
+            var opts = document.getElementById('selectDropdown').querySelectorAll('.select-option');
+            for (var i = 0; i < opts.length; i++) {
+                opts[i].classList.toggle('selected', opts[i].getAttribute('data-value') === valor);
+            }
+        }
+
+        // Dropdown toggle
+        document.getElementById('selectTrigger').addEventListener('click', function(e) {
+            e.stopPropagation();
+            var dropdown = document.getElementById('selectDropdown');
+            var trigger = document.getElementById('selectTrigger');
+            var aberto = dropdown.classList.contains('open');
+            fecharDropdown();
+            if (!aberto) {
+                dropdown.classList.add('open');
+                trigger.classList.add('open');
+            }
+        });
+
+        function fecharDropdown() {
+            document.getElementById('selectDropdown').classList.remove('open');
+            document.getElementById('selectTrigger').classList.remove('open');
+        }
+
+        document.addEventListener('click', function() {
+            fecharDropdown();
+            fecharAutocomplete();
+        });
+
+        // Normaliza string (remove acentos e lowercase)
+        function normalizar(str) {
+            return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function limparPontuacao(str) {
+            return str.replace(/[.\-\/,\s]/g, '');
+        }
+
+        // Busca
+        function buscar(termo, categoria) {
+            var t = normalizar(termo);
+            var tLimpo = limparPontuacao(t);
+            var resultados = [];
+
+            for (var i = 0; i < dados.length; i++) {
+                var row = dados[i];
+
+                if (categoria && row.categoria !== categoria) continue;
+
+                if (!termo.trim()) {
+                    resultados.push(row);
+                    continue;
+                }
+
+                var cnaeN = limparPontuacao(normalizar(row.cnae));
+                var itemN = limparPontuacao(normalizar(row.item));
+                var descCnaeN = normalizar(row.desc_cnae);
+                var descServN = normalizar(row.desc_servico);
+
+                if (cnaeN.indexOf(tLimpo) !== -1 ||
+                    itemN.indexOf(tLimpo) !== -1 ||
+                    descCnaeN.indexOf(t) !== -1 ||
+                    descServN.indexOf(t) !== -1) {
+                    resultados.push(row);
+                }
+            }
+
+            // Fallback para numerico sem resultado
+            if (resultados.length === 0 && /\d/.test(tLimpo)) {
+                resultados.push({
+                    cnae: termo.trim() + ' (Gen\u00e9rico)',
+                    desc_cnae: 'Atividade de Com\u00e9rcio, Ind\u00fastria ou N\u00e3o Mapeada',
+                    item: '00.00',
+                    categoria: 'N\u00e3o Incid\u00eancia',
+                    desc_servico: 'N\u00e3o consta na Lista de Servi\u00e7os da LC 116/2003 (Prov\u00e1vel ICMS/IPI).',
+                    local_iss: 'N\u00e3o Incide',
+                    retencao: 'N\u00e3o'
+                });
+            }
+
+            return resultados;
+        }
+
+        function executarBusca() {
+            termoAtual = document.getElementById('searchInput').value;
+            paginaAtual = 1;
+            resultadosAtuais = buscar(termoAtual, categoriaAtual);
+            renderizarResultados();
+            fecharAutocomplete();
+        }
+
+        // Buscar ao clicar botao ou Enter
+        document.getElementById('btnSearch').addEventListener('click', executarBusca);
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            var lista = document.getElementById('autocompleteList');
+            var items = lista.querySelectorAll('.autocomplete-item');
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                if (lista.classList.contains('open') && items.length > 0) {
+                    acIndex = Math.min(acIndex + 1, items.length - 1);
+                    atualizarAcHighlight(items);
+                }
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                if (lista.classList.contains('open') && items.length > 0) {
+                    acIndex = Math.max(acIndex - 1, 0);
+                    atualizarAcHighlight(items);
+                }
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                if (lista.classList.contains('open') && acIndex >= 0 && items[acIndex]) {
+                    items[acIndex].click();
+                } else {
+                    executarBusca();
+                }
+            } else if (e.key === 'Escape') {
+                fecharAutocomplete();
+            }
+        });
+
+        // Autocomplete
+        document.getElementById('searchInput').addEventListener('input', function() {
+            var valor = this.value.trim();
+            acIndex = -1;
+
+            if (valor.length < 2) {
+                fecharAutocomplete();
+                return;
+            }
+
+            var sugestoes = buscar(valor, categoriaAtual).slice(0, 10);
+
+            if (sugestoes.length === 0) {
+                fecharAutocomplete();
+                return;
+            }
+
+            var lista = document.getElementById('autocompleteList');
+            var html = '';
+            for (var i = 0; i < sugestoes.length; i++) {
+                var s = sugestoes[i];
+                html += '<div class="autocomplete-item" data-index="' + i + '">' +
+                        '<span class="ac-cnae">' + escapeHtml(s.cnae) + ' &middot; Item ' + escapeHtml(s.item) + '</span>' +
+                        '<div class="ac-desc">' + escapeHtml(s.desc_cnae) + '</div>' +
+                        '<span class="ac-cat">' + escapeHtml(s.categoria) + '</span>' +
+                        '</div>';
+            }
+            lista.innerHTML = html;
+            lista.classList.add('open');
+
+            var items = lista.querySelectorAll('.autocomplete-item');
+            for (var j = 0; j < items.length; j++) {
+                items[j].addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    var idx = parseInt(this.getAttribute('data-index'));
+                    var s = sugestoes[idx];
+                    document.getElementById('searchInput').value = s.desc_cnae;
+                    fecharAutocomplete();
+                    executarBusca();
+                });
+            }
+        });
+
+        function atualizarAcHighlight(items) {
+            for (var i = 0; i < items.length; i++) {
+                items[i].classList.toggle('highlighted', i === acIndex);
+            }
+            if (items[acIndex]) {
+                items[acIndex].scrollIntoView({ block: 'nearest' });
+            }
+        }
+
+        function fecharAutocomplete() {
+            document.getElementById('autocompleteList').classList.remove('open');
+            document.getElementById('autocompleteList').innerHTML = '';
+            acIndex = -1;
+        }
+
+        // Highlight termo no texto
+        function destacar(texto, termo) {
+            if (!termo || !termo.trim()) return escapeHtml(texto);
+            var textoSafe = escapeHtml(texto);
+            var termoNorm = normalizar(termo);
+            var textoNorm = normalizar(texto);
+            var resultado = '';
+            var i = 0;
+
+            while (i < textoSafe.length) {
+                var pos = normalizar(textoSafe.substring(i)).indexOf(termoNorm);
+                if (pos === -1) {
+                    resultado += textoSafe.substring(i);
+                    break;
+                }
+                resultado += textoSafe.substring(i, i + pos);
+                resultado += '<mark>' + textoSafe.substring(i + pos, i + pos + termo.length) + '</mark>';
+                i = i + pos + termo.length;
+            }
+            return resultado;
+        }
+
+        // Badge do Local ISS
+        function badgeLocalIss(valor) {
+            if (valor === 'Prestador') return '<span class="badge badge-prestador">Prestador</span>';
+            if (valor === 'Local da Presta\u00e7\u00e3o') return '<span class="badge badge-local">Local da Presta\u00e7\u00e3o</span>';
+            return '<span class="badge badge-nao-incide">' + escapeHtml(valor) + '</span>';
+        }
+
+        function badgeRetencao(valor) {
+            if (valor === 'Sim') return '<span class="badge badge-ret-sim">Sim</span>';
+            return '<span class="badge badge-ret-nao">' + escapeHtml(valor) + '</span>';
+        }
+
+        // Renderiza resultados
+        function renderizarResultados() {
+            var area = document.getElementById('resultsArea');
+            var welcome = document.getElementById('welcomeState');
+            var btnClear = document.getElementById('btnClear');
+
+            if (resultadosAtuais.length === 0 && !termoAtual.trim() && !categoriaAtual) {
+                area.style.display = 'none';
+                welcome.style.display = 'block';
+                btnClear.style.display = 'none';
+                return;
+            }
+
+            welcome.style.display = 'none';
+            area.style.display = 'block';
+            btnClear.style.display = 'inline-block';
+
+            if (resultadosAtuais.length === 0) {
+                area.innerHTML = '<div class="no-results"><p>Nenhum resultado encontrado para "<strong>' + escapeHtml(termoAtual) + '</strong>".</p></div>';
+                return;
+            }
+
+            var total = resultadosAtuais.length;
+            var totalPaginas = Math.max(1, Math.ceil(total / POR_PAGINA));
+            if (paginaAtual > totalPaginas) paginaAtual = totalPaginas;
+            var offset = (paginaAtual - 1) * POR_PAGINA;
+            var pagina = resultadosAtuais.slice(offset, offset + POR_PAGINA);
+
+            var html = '<div class="table-card">';
+            html += '<div class="results-header"><span class="results-count"><strong>' + total + '</strong> resultado' + (total !== 1 ? 's' : '') + ' encontrado' + (total !== 1 ? 's' : '') + '</span></div>';
+            html += '<div class="table-responsive"><table>';
+            html += '<thead><tr><th>CNAE</th><th>Descri\u00e7\u00e3o CNAE</th><th>Item LC</th><th>Descri\u00e7\u00e3o Servi\u00e7o</th><th>Local ISS</th><th>Reten\u00e7\u00e3o</th></tr></thead>';
+            html += '<tbody>';
+
+            for (var i = 0; i < pagina.length; i++) {
+                var r = pagina[i];
+                html += '<tr>';
+                html += '<td data-label="CNAE"><span class="badge badge-cnae">' + destacar(r.cnae, termoAtual) + '</span></td>';
+                html += '<td data-label="Descri\u00e7\u00e3o CNAE">' + destacar(r.desc_cnae, termoAtual) + '</td>';
+                html += '<td data-label="Item LC"><span class="badge badge-item">' + destacar(r.item, termoAtual) + '</span></td>';
+                html += '<td data-label="Descri\u00e7\u00e3o Servi\u00e7o">' + destacar(r.desc_servico, termoAtual) + '</td>';
+                html += '<td data-label="Local ISS">' + badgeLocalIss(r.local_iss) + '</td>';
+                html += '<td data-label="Reten\u00e7\u00e3o">' + badgeRetencao(r.retencao) + '</td>';
+                html += '</tr>';
+            }
+
+            html += '</tbody></table></div>';
+
+            // Paginacao
+            if (totalPaginas > 1) {
+                html += '<div class="pagination">';
+                html += '<button ' + (paginaAtual <= 1 ? 'disabled' : '') + ' onclick="irPagina(' + (paginaAtual - 1) + ')">&laquo; Anterior</button>';
+
+                var inicio = Math.max(1, paginaAtual - 2);
+                var fim = Math.min(totalPaginas, paginaAtual + 2);
+
+                if (inicio > 1) {
+                    html += '<button onclick="irPagina(1)">1</button>';
+                    if (inicio > 2) html += '<span class="page-info">...</span>';
+                }
+
+                for (var p = inicio; p <= fim; p++) {
+                    html += '<button class="' + (p === paginaAtual ? 'active' : '') + '" onclick="irPagina(' + p + ')">' + p + '</button>';
+                }
+
+                if (fim < totalPaginas) {
+                    if (fim < totalPaginas - 1) html += '<span class="page-info">...</span>';
+                    html += '<button onclick="irPagina(' + totalPaginas + ')">' + totalPaginas + '</button>';
+                }
+
+                html += '<button ' + (paginaAtual >= totalPaginas ? 'disabled' : '') + ' onclick="irPagina(' + (paginaAtual + 1) + ')">Pr\u00f3ximo &raquo;</button>';
+                html += '</div>';
+            }
+
+            html += '</div>';
+            area.innerHTML = html;
+
+            // Scroll pro topo dos resultados
+            area.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function irPagina(n) {
+            paginaAtual = n;
+            renderizarResultados();
+        }
+
+        // Limpar
+        document.getElementById('btnClear').addEventListener('click', function() {
+            document.getElementById('searchInput').value = '';
+            termoAtual = '';
+            categoriaAtual = '';
+            paginaAtual = 1;
+            resultadosAtuais = [];
+            selecionarCategoria('');
+            document.getElementById('resultsArea').style.display = 'none';
+            document.getElementById('welcomeState').style.display = 'block';
+            this.style.display = 'none';
+            document.getElementById('searchInput').focus();
+        });
+
+        // Ctrl+K foca na busca
+        document.addEventListener('keydown', function(e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                document.getElementById('searchInput').focus();
+                document.getElementById('searchInput').select();
+            }
+        });
+
+        // Escape HTML
+        function escapeHtml(str) {
+            if (!str) return '';
+            var div = document.createElement('div');
+            div.appendChild(document.createTextNode(str));
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>
